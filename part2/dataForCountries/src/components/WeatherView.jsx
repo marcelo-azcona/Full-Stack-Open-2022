@@ -10,7 +10,7 @@ const WeatherView = ({ country }) => {
   useEffect(() => {
     const weatherData = axios
       .get(
-        `https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&appid=0f3bd3a191a286b40b07189955b9549d`
+        `https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&appid={API_KEY}`
       )
       .then((response) => console.log(response));
   }, []);
