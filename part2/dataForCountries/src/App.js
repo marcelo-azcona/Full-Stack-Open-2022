@@ -3,8 +3,6 @@ import { useEffect, useState } from 'react';
 import ContentCard from './components/ContentCard';
 
 const App = () => {
-  const api_key = '0f3bd3a191a286b40b07189955b9549d';
-
   const [countries, setCountries] = useState([]);
   const [filteredCountries, setFilteredCountries] = useState(countries);
   const [searchField, setSearchField] = useState('');
